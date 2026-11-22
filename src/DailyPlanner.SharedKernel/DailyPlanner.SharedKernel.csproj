@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- No package or framework dependencies on purpose: Contracts projects (and later the Blazor client) can reference this. -->
+
+</Project>

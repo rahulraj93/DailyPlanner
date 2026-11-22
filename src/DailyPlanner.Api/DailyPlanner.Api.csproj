@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DailyPlanner.SharedKernel\DailyPlanner.SharedKernel.csproj" />
+    <ProjectReference Include="..\DailyPlanner.Web\DailyPlanner.Web.csproj" />
+    <ProjectReference Include="..\Modules\Planner\DailyPlanner.Planner\DailyPlanner.Planner.csproj" />
+    <ProjectReference Include="..\Modules\Life\DailyPlanner.Life\DailyPlanner.Life.csproj" />
+    <ProjectReference Include="..\Modules\Finance\DailyPlanner.Finance\DailyPlanner.Finance.csproj" />
+    <ProjectReference Include="..\Modules\Notify\DailyPlanner.Notify\DailyPlanner.Notify.csproj" />
+    <ProjectReference Include="..\Modules\AiCoach\DailyPlanner.AiCoach\DailyPlanner.AiCoach.csproj" />
+  </ItemGroup>
+
+</Project>

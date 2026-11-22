@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Internal implementation of the AiCoach module. Only AiCoachModule (registration) is public. -->
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="DailyPlanner.AiCoach.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DailyPlanner.SharedKernel\DailyPlanner.SharedKernel.csproj" />
+    <ProjectReference Include="..\DailyPlanner.AiCoach.Contracts\DailyPlanner.AiCoach.Contracts.csproj" />
+    <!-- AiCoach builds prompts from other modules' Contracts queries. -->
+    <ProjectReference Include="..\..\Planner\DailyPlanner.Planner.Contracts\DailyPlanner.Planner.Contracts.csproj" />
+    <ProjectReference Include="..\..\Life\DailyPlanner.Life.Contracts\DailyPlanner.Life.Contracts.csproj" />
+    <ProjectReference Include="..\..\Finance\DailyPlanner.Finance.Contracts\DailyPlanner.Finance.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
