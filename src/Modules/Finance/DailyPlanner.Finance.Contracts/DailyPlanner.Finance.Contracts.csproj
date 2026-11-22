@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Public surface of the Finance module: interfaces, DTOs, integration events. -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DailyPlanner.SharedKernel\DailyPlanner.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
